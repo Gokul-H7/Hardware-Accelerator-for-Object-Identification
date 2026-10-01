@@ -1,6 +1,9 @@
 Meeting Type: (Advisor / Team-Only)
+
 Date: YYYY-MM-DD
+
 Start–End Time:
+
 Location/Mode: (In-person / Zoom / Teams / etc.)
 
 Attendees:
