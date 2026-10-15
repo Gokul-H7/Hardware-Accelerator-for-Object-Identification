@@ -1,0 +1,32 @@
+### Phase 1 — PS-only YOLOv4-Tiny Benchmark Results
+
+We successfully executed YOLOv4-Tiny forward-pass inference on the PYNQ-Z2 Processing System (PS), using the dual-core ARM Cortex-A9 processor.
+
+**Hardware and Model Configuration**
+- Platform: PYNQ-Z2 (Zynq-7020)
+- Processor: Dual-core ARM Cortex-A9
+- Model: YOLOv4-Tiny
+- Input resolution: 416 × 416
+- Model weights: Approximately 24 MB
+- Benchmark: 2 warm-up runs and 10 measured inference runs
+
+**Performance Results**
+- Average inference latency: [Actual value] ms
+- Average FPS: [Actual value]
+- Average CPU utilization: [Actual value]%
+- Average process RAM usage: [Actual value] MB
+- Maximum sampled process RAM: [Actual value] MB
+
+**Neural Network Output**
+- First output tensor: (507, 85)
+- Second output tensor: (2028, 85)
+- Total candidate predictions: 2,535
+- Prediction structure: 4 bounding-box values + 1 objectness score + 80 class scores
+
+**Conclusion**
+
+The YOLOv4-Tiny model successfully completed forward-pass inference on the PYNQ-Z2 ARM processor and generated output tensors with the expected dimensions.
+
+These performance measurements will serve as the PS-only baseline for comparison with our future PS + PL FPGA accelerator.
+
+Our next step is to implement postprocessing and validate the final object detection results before integrating hardware acceleration.
